@@ -9,5 +9,5 @@ RUN apt update \
     && rm -f flutter_linux_3.19.1-stable.tar.xz \
     && echo 'export PATH="$PATH:/workspaces/flutter/sdk/flutter/bin"' >> $HOME/.bashrc \
     && git config --global --add safe.directory /workspaces/flutter/sdk/flutter \
-    && apt install -y clang cmake ninja-build pkg-config libgtk-3-dev
-
+    && apt install -y clang cmake ninja-build pkg-config libgtk-3-dev \
+    && source $HOME/.bashrc   
