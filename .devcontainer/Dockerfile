@@ -1,4 +1,5 @@
 FROM ubuntu
+LABEL Joey Hwang Flutter buildling Environment
 RUN apt update \
     && apt install -y wget xz-utils git \
     && wget "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.19.1-stable.tar.xz" \
